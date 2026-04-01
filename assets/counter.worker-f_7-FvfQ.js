@@ -1,0 +1,1 @@
+(function(){self.onmessage=e=>{let{numbers:t}=e.data,n=performance.now(),r=0;for(let e of t){let t=0;for(;t<e;)t++;r+=t}let i=performance.now()-n;self.postMessage({type:`done`,totalCount:r,elapsedMs:i})}})();
